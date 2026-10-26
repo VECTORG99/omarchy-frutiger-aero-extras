@@ -10,7 +10,7 @@
 [![Hyprland](https://img.shields.io/badge/Hyprland-ready-1A3344?style=for-the-badge&logo=hyprland)](https://hyprland.org)
 [![Omarchy](https://img.shields.io/badge/Omarchy-theme-1299CA?style=for-the-badge)](https://github.com/omacom/omarchy)
 
-**Glassmorphism · Translucent windows · Vista/7-style Waybar · Authentic FA wallpapers · 7 EWW desktop widgets**
+**Glassmorphism · Translucent windows · Vista/7-style Waybar · 7 EWW desktop widgets**
 
 Light & dark variants — swappable via `omarchy theme set` — one-command install
 
@@ -27,7 +27,7 @@ The theme itself has no code and installs on its own with `omarchy theme install
 
 This theme is built on top of [Omarchy on CachyOS](https://github.com/roboff/omarchy-on-cachyos) by [Mr. Roboff](https://github.com/roboff) — my Omarchy system base. All Frutiger Aero customizations are layered on top of that foundation.
 
-Includes light and dark variants with glassmorphism, blurred translucent windows, Vista/7-style Waybar, Alacritty terminal glass, authentic FA wallpapers (Asadal + Perfect Hue), Vista startup chime (optional, see [Issue #11](https://github.com/VECTORG99/omarchy-frutiger-aero/issues/11)), and matching cursor/icon themes.
+Includes light and dark variants with glassmorphism, blurred translucent windows, Vista/7-style Waybar, Alacritty terminal glass, Vista startup chime (optional, see [Issue #11](https://github.com/VECTORG99/omarchy-frutiger-aero/issues/11)), and matching cursor/icon themes.
 
 Both variants switch with `omarchy theme set`. `install.sh` installs the light theme from its own repository and the rest from here.
 
@@ -41,7 +41,6 @@ Both variants switch with `omarchy theme set`. `install.sh` installs the light t
 | **Lockscreen** | Rounded input, teal glow, live clock | Same |
 | **Terminal** | Alacritty 85% opacity, JetBrains Mono | Same |
 | **Widgets** | 7 EWW widgets (weather, clock, music…) | Same |
-| **Wallpapers** | 3 authentic FA wallpapers (Asadal + Perfect Hue) | 3 more dark variants (6 total) |
 | **Startup sound** | Optional Vista chime (bring your own `.wav`) | Same |
 
 ## Preview
@@ -155,14 +154,7 @@ Vista startup chime plays 2s after login via `paplay --volume=45000` (autostart.
 
 ### Wallpapers
 
-3 authentic Frutiger Aero wallpapers per variant (6 total), bundled in the repo:
-
-| Variant | Source | Files | Resolution |
-|---------|--------|-------|------------|
-| Light | Asadal, Perfect Hue | `fa-asadal-104.jpg`, `perfect-hue-1.jpg`, `perfect-hue-5.jpg` | 3000×2200 – 3840×2160 |
-| Dark | Asadal, Perfect Hue | `fa-asadal-28.jpg`, `perfect-hue-3.jpg`, `perfect-hue-4.jpg` | 3440×1440 – 4000×2000 |
-
-Light wallpapers ship with the [theme repository](https://github.com/VECTORG99/omarchy-frutiger-aero); dark ones are in `config/omarchy/themes/frutiger-aero-dark/backgrounds/`. Active wallpaper set via `~/.config/omarchy/current/background` symlink; cycle with `omarchy theme bg next`.
+No wallpapers are bundled. The Frutiger Aero wallpapers this theme was made with are not freely licensed, so they were removed. Add your own to `~/.config/omarchy/backgrounds/<theme>/`.
 
 ## What's included
 
@@ -248,13 +240,8 @@ gh pr create
 - **[Omarchy](https://github.com/omacom/omarchy)** — the Hyprland meta-distribution this theme is built for
 - **[Omarchy on CachyOS](https://github.com/roboff/omarchy-on-cachyos)** by [Mr. Roboff](https://github.com/roboff) — system base
 - **[EWW](https://github.com/elkowar/eww)** — ElKowar's Wacky Widgets for desktop widgets
-- **[Asadal](https://www.asadal.com)** and **Perfect Hue** — original Frutiger Aero wallpapers
 - **Frutiger Aero community** — for keeping the aesthetic alive since 2007
 
 ## License
 
-[MIT](LICENSE) — Copyright (c) 2026 Diego Hernandez. The MIT license does not cover the wallpapers.
-
-### Wallpaper credits
-
-The bundled wallpapers in `config/omarchy/themes/frutiger-aero-dark/backgrounds/` are sourced from publicly available Frutiger Aero wallpaper collections by [Asadal](https://www.asadal.com) and Perfect Hue. They are included for personal desktop use with this theme. If you are the rights holder and believe any image should not be redistributed here, open an issue and it will be removed promptly.
+[MIT](LICENSE) — Copyright (c) 2026 Diego Hernandez.
